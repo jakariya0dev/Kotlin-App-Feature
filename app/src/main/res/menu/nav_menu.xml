@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu1"
+        android:title="@string/menu_one" />
+
+    <item
+        android:id="@+id/menu2"
+        android:title="@string/menu_two" />
+
+    <item android:title="@string/todo">
+        <menu>
+            <item
+                android:id="@+id/menu3"
+                android:title="@string/menu_three" />
+        </menu>
+    </item>
 </menu>

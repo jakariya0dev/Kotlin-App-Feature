@@ -11,4 +11,5 @@
     <string name="show_alert_dialog">Show alert dialog</string>
     <string name="show_snackbar">Show Snackbar</string>
     <string name="show_toast">Show Toast</string>
+    <string name="show_recycler_view">Show Recycler View</string>
 </resources>

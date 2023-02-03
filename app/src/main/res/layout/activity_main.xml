@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <Button
             android:id="@+id/btn_ad_id"
             android:layout_width="match_parent"
@@ -24,6 +25,17 @@
             android:layout_height="wrap_content"
             android:text="@string/show_toast"/>
 
+        <Button
+            android:id="@+id/btn_snack_bar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_snackbar"/>
+
+        <Button
+            android:id="@+id/btn_show_recycler_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_recycler_view"/>
 
 
     </LinearLayout>

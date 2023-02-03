@@ -48,7 +48,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, AlertDialog::class.java))
         }
 
-        // start -> SNACK BAR CODE
+        // start TOAST
+
+        findViewById<Button>(R.id.btn_toast_msg_id).setOnClickListener {
+            Toast.makeText(this@MainActivity, "Hello There", Toast.LENGTH_SHORT).show()
+        }
+        // SNACK BAR CODE
         findViewById<Button>(R.id.btn_snack_bar_id).setOnClickListener {
 
             // Snackbar.make(it, "This is SnackBar", Snackbar.LENGTH_SHORT).show()
@@ -62,7 +67,11 @@ class MainActivity : AppCompatActivity() {
             snackbar.show()
 
         }
-        // end -> SNACK BAR CODE
+
+        // Recycler View
+        findViewById<Button>(R.id.btn_show_recycler_view_id).setOnClickListener {
+            startActivity(Intent(this, RecyclerView::class.java))
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

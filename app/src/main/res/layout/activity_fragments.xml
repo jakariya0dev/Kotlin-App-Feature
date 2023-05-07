@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".Fragments">
+
+    <androidx.fragment.app.FragmentContainerView
+
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_height="500dp"/>
+
+    <Button
+        android:layout_marginStart="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fm_one"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_gm_one_id"/>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fm_two"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_gm_two_id"
+        tools:ignore="RelativeOverlap" />
+
+</RelativeLayout>

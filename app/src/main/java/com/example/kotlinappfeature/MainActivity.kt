@@ -72,6 +72,24 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_show_recycler_view_id).setOnClickListener {
             startActivity(Intent(this, RecyclerView::class.java))
         }
+
+        findViewById<Button>(R.id.btn_ext_img_id).setOnClickListener {
+            val intent = Intent(this, LoadImageFromUrl::class.java)
+            startActivity(intent)
+        }
+
+        // GRAGMENTS
+
+        findViewById<Button>(R.id.btn_fragments_id).setOnClickListener {
+            startActivity(Intent(this, Fragments::class.java))
+        }
+        findViewById<Button>(R.id.btn_ext_font_id).setOnClickListener {
+            startActivity(Intent(this, ExternalFont::class.java));
+        }
+
+        findViewById<Button>(R.id.btn_ext_icon_id).setOnClickListener {
+            startActivity(Intent(this, ExternalFont::class.java));
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

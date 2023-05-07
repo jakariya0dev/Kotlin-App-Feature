@@ -37,6 +37,30 @@
             android:layout_height="wrap_content"
             android:text="@string/show_recycler_view"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_fragments_id"
+            android:text="@string/fragments"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ext_font_id"
+            android:text="@string/fragments"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ext_img_id"
+            android:text="@string/LoadExtImg"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ext_icon_id"
+            android:text="External Icon"/>
+
 
     </LinearLayout>
 

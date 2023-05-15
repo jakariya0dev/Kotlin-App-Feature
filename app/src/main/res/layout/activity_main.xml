@@ -61,7 +61,22 @@
             android:id="@+id/btn_ext_icon_id"
             android:text="External Icon"/>
 
+        <Button
+            android:id="@+id/piano_app_btn_id"
+            android:text="@string/piano_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/counter_app_btn_id"
+            android:text="@string/counter_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
+        <Button
+            android:id="@+id/bmi_app_btn_id"
+            android:text="@string/bmi_calculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView

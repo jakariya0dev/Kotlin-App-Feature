@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".AppBMI">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/btn_male_id"
+            android:clickable="true"
+            android:background="#880E4F"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_baseline_male_24"
+                android:layout_width="55dp"
+                android:tint="#fff"
+                android:layout_height="55dp"/>
+            <TextView
+                android:text="Male"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_female_id"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:background="#880E4F"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:tint="#fff"
+                android:src="@drawable/ic_baseline_female_24"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+            <TextView
+                android:text="Female"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="#880E4F"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="10cm"
+            android:id="@+id/tv_height"
+            android:textSize="55sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <SeekBar
+            android:thumbOffset="10dp"
+            android:thumbTint="@color/white"
+
+            android:progress="50"
+            android:progressTint="@color/white"
+            android:max="300"
+            android:id="@+id/seekbar"
+            android:scrollbarSize="55dp"
+            android:scrollbars="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="#880E4F"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Weight"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="10"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:id="@+id/tv_weight"
+                android:layout_marginBottom="10dp"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="#880E4F"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:src="@drawable/ic_baseline_add_24"
+                        android:id="@+id/plus_btn_weight"
+                        android:layout_width="55dp"
+                        android:tint="#fff"
+                        android:layout_height="55dp"/>
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:src="@drawable/ic_baseline_remove_24"
+                        android:id="@+id/minus_btn_weight"
+                        android:layout_width="55dp"
+                        android:tint="#fff"
+                        android:layout_height="55dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="#880E4F"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Age"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_age"
+                android:text="10"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="#880E4F"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:src="@drawable/ic_baseline_add_24"
+                        android:id="@+id/plus_btn_age"
+                        android:layout_width="55dp"
+                        android:tint="#fff"
+                        android:layout_height="55dp"/>
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:src="@drawable/ic_baseline_remove_24"
+                        android:layout_width="55dp"
+                        android:tint="#fff"
+                        android:id="@+id/minus_btn_age"
+                        android:layout_height="55dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_calculate"
+        android:layout_margin="10dp"
+        android:background="#D50000"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="Calculate BMI"
+
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

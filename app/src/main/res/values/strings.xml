@@ -19,4 +19,9 @@
     <string name="another_fragments">Another Fragments</string>
     <string name="fm_one">FM One</string>
     <string name="fm_two">FM Two</string>
+    <string name="button_text">Button Text</string>
+    <string name="piano_app">Piano App</string>
+    <string name="_1">1</string>
+    <string name="counter_app">Counter App</string>
+    <string name="bmi_calculator">BMI Calculator</string>
 </resources>

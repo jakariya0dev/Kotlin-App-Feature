@@ -78,6 +78,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<Button>(R.id.piano_app_btn_id).setOnClickListener {
+            startActivity(Intent(this, AppPiano::class.java))
+        }
+        findViewById<Button>(R.id.counter_app_btn_id).setOnClickListener {
+            startActivity(Intent(this, CounterApp::class.java))
+        }
         // GRAGMENTS
 
         findViewById<Button>(R.id.btn_fragments_id).setOnClickListener {
@@ -88,7 +94,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.btn_ext_icon_id).setOnClickListener {
-            startActivity(Intent(this, ExternalFont::class.java));
+            startActivity(Intent(this, ExternalIcon::class.java).putExtra("key", "values"));
+        }
+
+        findViewById<Button>(R.id.btn_ext_icon_id).setOnClickListener {
+            startActivity(Intent(this, ExternalIcon::class.java).putExtra("key", "values"));
+        }
+        findViewById<Button>(R.id.bmi_app_btn_id).setOnClickListener {
+            startActivity(Intent(this, AppBMI::class.java));
         }
     }
 

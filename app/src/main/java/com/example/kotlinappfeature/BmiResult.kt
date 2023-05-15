@@ -30,17 +30,17 @@ class BmiResult : AppCompatActivity() {
         if (bmi != null) {
             if (bmi >= 25.0){
                 layout.setBackgroundColor(Color.parseColor("#ff0000"))
-                tvHeading.text = "You are Underweighted"
+                tvHeading.text = "You are Overweighted"
                 tvResult.text = "Your BMI is $bmi"
                 tvDescription.text ="Tips: Do exercise regulerly to reduce weight"
             }
-            if (bmi >= 18.5){
+            else if (bmi >= 18.5){
                 layout.setBackgroundColor(Color.parseColor("#00ff00"))
                 tvHeading.text = "You weight is Normal"
                 tvResult.text = "Your BMI is $bmi"
                 tvDescription.text ="Tips: Nothing to do! enjoy your life"
             }
-            if (bmi<18.5) {
+            else if (bmi<18.5) {
                 layout.setBackgroundColor(Color.parseColor("#ff0000"))
                 tvHeading.text = "You are underweight"
                 tvResult.text = "Your BMI is $bmi"

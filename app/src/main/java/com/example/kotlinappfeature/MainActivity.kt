@@ -103,6 +103,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.bmi_app_btn_id).setOnClickListener {
             startActivity(Intent(this, AppBMI::class.java));
         }
+        findViewById<Button>(R.id.quiz_app_btn_id).setOnClickListener {
+            startActivity(Intent(this, QuizApp::class.java));
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

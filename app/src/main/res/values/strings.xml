@@ -24,4 +24,10 @@
     <string name="_1">1</string>
     <string name="counter_app">Counter App</string>
     <string name="bmi_calculator">BMI Calculator</string>
+
+
+    <string name="nl_1">সৈয়দ নজরুল ইসলাম</string>
+    <string name="nl_2">তাজউদ্দীন আহমদ</string>
+    <string name="nl_3">মুহাম্মদ মনসুর আলী</string>
+    <string name="nl_4">মোহাম্মদ কামারুজ্জামান</string>
 </resources>

@@ -15,6 +15,13 @@
         android:theme="@style/Theme.KotlinAppFeature"
         tools:targetApi="31">
         <activity
+            android:name=".QuizApp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".BmiResult"
             android:exported="false">
             <meta-data
